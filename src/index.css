@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html{
+        font-family: 'Inter', sans-serif;
+    }
+    table{}
+    th,
+    td{
+        @apply py-3 px-2.5 text-ss text-left border-y border-gray-200;
+    }
+    thead{
+        @apply bg-neutral-100;
+    }
+    th{
+        @apply font-semibold;
+    }
+    a{
+        @apply text-sky-500 hover:underline;
+    }
+}
+@layer utilities {
+    .text-ss {
+      font-size: 0.75rem; /* Custom size for text-ss */
+    }
+  }
