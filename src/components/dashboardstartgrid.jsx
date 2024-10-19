@@ -1,10 +1,10 @@
-import React from 'react';
-import { FcBriefcase,  FcConferenceCall, FcElectronics } from "react-icons/fc";
+import React from 'react'; 
+import { FcBriefcase, FcConferenceCall, FcElectronics } from "react-icons/fc";
 import { GrTrain } from "react-icons/gr";
 
 const BoxWrapper = ({ children }) => {
   return (
-    <div className="bg-white rounded-sm p-4 flex-1 border border-gray-200 flex items-center justify-center">
+    <div className="bg-white rounded-sm p-4 border border-gray-200 flex items-center justify-start flex-1 w-1/4"> {/* Set width here */}
       {children}
     </div>
   );
@@ -12,10 +12,11 @@ const BoxWrapper = ({ children }) => {
 
 const Dashboardstartgrid = () => {
   return (
-    <div className="flex gap-4 w-full">
+    <>
+    <div className="flex relative gap-4 w-full"> 
       <BoxWrapper>
-        <div className='rounded-full h-12 w-12 flex items-center justify-center bg-sky-500'>
-        <FcBriefcase className='text-2xl text-white'/>
+        <div className='rounded-full h-12 w-12 flex items-center justify-center bg-sky-500 '>
+          <FcBriefcase className='text-2xl text-white'/>
         </div>
         <div className='pl-4'>
           <span className='text-sm text-gray-500 font-light'>Total Sales</span>
@@ -27,7 +28,7 @@ const Dashboardstartgrid = () => {
       </BoxWrapper>
       <BoxWrapper>
         <div className='rounded-full h-12 w-12 flex items-center justify-center bg-orange-500'>
-        <FcElectronics  className='text-2xl text-white'/>
+          <FcElectronics className='text-2xl text-white'/>
         </div>
         <div className='pl-4'>
           <span className='text-sm text-gray-500 font-light'>Total Enquires</span>
@@ -39,7 +40,7 @@ const Dashboardstartgrid = () => {
       </BoxWrapper>
       <BoxWrapper>
         <div className='rounded-full h-12 w-12 flex items-center justify-center bg-yellow-500'>
-        <FcConferenceCall  className='text-2xl text-white'/>
+          <FcConferenceCall className='text-2xl text-white'/>
         </div>
         <div className='pl-4'>
           <span className='text-sm text-gray-500 font-light'>Total Customers</span>
@@ -51,7 +52,7 @@ const Dashboardstartgrid = () => {
       </BoxWrapper>
       <BoxWrapper>
         <div className='rounded-full h-12 w-12 flex items-center justify-center bg-green-500'>
-        <GrTrain className='text-2xl text-white'/>
+          <GrTrain className='text-2xl text-white'/>
         </div>
         <div className='pl-4'>
           <span className='text-sm text-gray-500 font-light'>Total Orders</span>
@@ -62,6 +63,7 @@ const Dashboardstartgrid = () => {
         </div>
       </BoxWrapper>
     </div>
+    </>
   );
 };
 
