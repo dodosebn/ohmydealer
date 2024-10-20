@@ -47,7 +47,7 @@ const Sidebar = () => {
       <div
         className={`${
           isMobile ? "flex" : "hidden"
-        } md:flex fixed md:static flex-col bg-neutral-900 w-60 h-full p-3 text-white transition-transform duration-300 z-40 md:z-0`}
+        } md:flex overflow-hidden fixed md:static flex-col bg-neutral-900 w-60 h-full p-3 text-white transition-transform duration-300 z-40 md:z-0`}
       >
         <div className="flex items-center gap-2 px-1 py-3">
           <FcBullish fontSize={24} />
